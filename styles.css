@@ -1,0 +1,58 @@
+/* Reset some default browser styles */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    color: #333;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+h1 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #0077cc;
+}
+
+.project p {
+    margin: 10px 0;
+}
+
+/* Style for navigation back link */
+a.back-link {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #0077cc;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.project a {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Add this class to the back link in each project HTML file */
+a.back-link {
+    text-align: center;
+    width: 100%;
+}
