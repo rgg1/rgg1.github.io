@@ -91,3 +91,10 @@ a.back-link {
 .content-container p {
     line-height: 1.8;
 }
+
+.image-container figcaption {
+    text-align: center;
+    color: #c1c1c1;
+    font-size: 12px;
+    text-decoration: underline;
+}
