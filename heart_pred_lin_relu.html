@@ -6,7 +6,128 @@
 </head>
 <body>
     <h1>Heart Disease Prediction Using Linear layers and ReLU functions</h1>
-    <p>Detailed information about Heart Disease Prediction Using Linear layers and ReLU functions.</p>
+    <p>
+        This project stands as a testament to the application of machine learning in healthcare, specifically targeting heart
+        disease prediction. Using PyTorch and a dataset encompassing diverse health metrics, the project crafts a neural network
+        model achieving remarkable accuracies. Below is a detailed exploration of the project's components, methodologies, and
+        significance.
+        <br>
+        <ul>
+            <li>
+                Introduction and Objective: Heart disease, a global health concern, calls for early and accurate prediction.
+                This project addresses this need by constructing a machine learning model using PyTorch, aiming to predict the
+                presence or absence of heart disease based on various health attributes.
+            </li>
+            <li>
+                Dataset and Features:
+                <ul>
+                    <li>
+                        Source: The dataset, available on Kaggle, can be accessed at:
+                        https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction.
+                    </li>
+                    <li>
+                        Attributes: Key features such as age, sex, chest pain type, resting blood pressure, cholesterol level,
+                        and others form the input for the model.
+                    </li>
+                    <img src="images/heart_lin/heart_dataset_table.png" alt="Heart Dataset Table" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                    <li>
+                        Target Variable: The binary target variable 'HeartDisease' represents the disease's presence or absence,
+                        guiding the model's training.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Data Loading and Preprocessing:
+                <ul>
+                    <li>
+                        Data Handling: Utilizing pandas and NumPy, the project efficiently loads and manipulates the dataset.
+                    </li>
+                    <img src="images/heart_lin/heart_libraries.png" alt="Project Libraries" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                    <li>
+                        One-Hot Encoding: Categorical variables are transformed using one-hot encoding, ensuring compatibility
+                        with the model.
+                    </li>
+                    <img src="images/heart_lin/one_hot_encoded_table.png" alt="One-Hot-Encoded Data" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                    <li>
+                        Training/Testing Split: A systematic split between training and testing sets ensures an unbiased evaluation.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Model Architecture and Design:
+                <ul>
+                    <li>
+                        Input Layer: Tailored to the input features' dimensionality, the model starts with a compatible input layer.
+                    </li>
+                    <li>
+                        Hidden Layers: Three hidden layers, comprising 40, 80, and 60 neurons respectively, are interwoven with
+                        ReLU activation functions, ensuring non-linearity.
+                    </li>
+                    <li>
+                        Output Layer: A single-neuron output layer caters to the binary classification task.
+                    </li>
+                </ul>
+            </li>
+            <img src="images/heart_lin/heart_model_architecture.png" alt="Model Architecture" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+            <li>
+                Training Process and Evaluation:
+                <ul>
+                    <li>
+                        Model Training: Employing linear layers and ReLU activations, the model undergoes rigorous training.
+                    </li>
+                    <li>
+                        Evaluation Metrics: Accuracy serves as the primary metric, with the model achieving over 90% on the training
+                        set and consistently above 80% on the testing set.
+                    </li>
+                    <li>
+                        Detailed Logging: Regular intervals of loss and accuracy logging offer transparency and insights into the
+                        training dynamics.
+                    </li>
+                </ul>
+            </li>
+            <img src="images/heart_lin/heart_model_results.png" alt="Model Results" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+            <li>
+                Requirements and Running Instructions:
+                <ul>
+                    <li>
+                        Libraries: Dependencies such as torchmetrics, torchinfo, PyTorch, scikit-learn, and tqdm are essential.
+                    </li>
+                    <li>
+                        Google Colab Compatibility: The notebook is designed for seamless execution on Google Colab,
+                        minimizing setup hassles.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Results and Interpretation: The model's high accuracies on both training and testing datasets signify its
+                robustness and potential applicability in real-world healthcare scenarios.
+            </li>
+            <li>
+                Future Work and Enhancements:
+                <ul>
+                    <li>
+                        Hyperparameter Tuning: Exploring different learning rates, batch sizes, and optimization algorithms could
+                        further enhance performance.
+                    </li>
+                    <li>
+                        Architectural Adjustments: Experimenting with different numbers of layers, neurons, and activation functions
+                        may yield interesting insights.
+                    </li>
+                    <li>
+                        Preprocessing Techniques: Advanced feature engineering and normalization methods might contribute to
+                        improved model understanding.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Conclusion and Impact: This project serves not only as a technical demonstration but also as an embodiment of
+                machine learning's transformative impact on healthcare. By achieving commendable accuracies in predicting heart
+                disease, it opens doors to early intervention, better patient care, and enriched medical decision-making. Its
+                modular design, clear documentation, and adaptability make it a valuable resource for learners, healthcare
+                professionals, and researchers alike.
+            </li>
+        </ul>
+    </p>
     <a href="index.html" class="back-link">Back to all projects</a>
 </body>
 </html>

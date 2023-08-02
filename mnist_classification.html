@@ -6,7 +6,99 @@
 </head>
 <body>
     <h1>Image Classification on Fashion MNIST Dataset Using Various Models</h1>
-    <p>Detailed information about Image Classification on Fashion MNIST Dataset Using Various Models.</p>
+    <p>
+        This project is a robust exploration of deep learning techniques applied to the field of computer vision, using the
+        FashionMNIST dataset. Leveraging PyTorch, it builds, trains, evaluates, and visualizes three distinct neural network
+        architectures, offering a comprehensive guide to modern image classification.
+        <br>
+        <ul>
+            <li>
+                Introduction and Purpose: In the evolving domain of computer vision, classifying images accurately and efficiently
+                is a pivotal challenge. This project addresses this challenge by creating and comparing three deep learning models
+                to classify FashionMNIST images, serving as an exemplary application of neural networks to real-world tasks.
+            </li>
+            <img src="images/fashion_mnist/mnist_initial_shoe_vis_gray.png" alt="MNIST Single Image" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+            <img src="images/fashion_mnist/mnist_dataset_grid.png" alt="MNIST Grid Images" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+            <li>
+                Getting Started and Requirements: With dependencies including PyTorch, torchvision, mlxtend, tqdm, pandas, and
+                matplotlib, the project is designed for ease of setup. Users can clone the repository and install the required
+                packages, even running the code on Google Colab without manual downloads.
+            </li>
+            <img src="images/fashion_mnist/mnist_libraries.png" alt="Project Libraries" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+            <li>
+                Model Architectures and Design:
+                <ul>
+                    <li>
+                        Model 0 - Simple Linear Neural Network: A foundational model using linear layers to demonstrate the
+                        basic structure and functionality of a neural network.
+                    </li>
+                    <img src="images/fashion_mnist/first_simple_model_architecture.png" alt="Model 0 Architecture" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                    <li>
+                        Model 1 - Multilayer Feed-Forward Neural Network: An extension of the linear model, adding multiple
+                        layers to enable the capture of more complex patterns and relationships.
+                    </li>
+                    <img src="images/fashion_mnist/second_model_non_linearity.png" alt="Model 1 Architecture" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                    <li>
+                        Model 2 - Convolutional Neural Network with TinyVGG: Incorporating convolutional layers and the TinyVGG
+                        architecture, this model enhances the capability to recognize spatial hierarchies and intricate features.
+                    </li>
+                    <img src="images/fashion_mnist/third_cnn_model.png" alt="Model 2 Architecture" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                </ul>
+            </li>
+            <li>
+                Training, Testing, and Evaluation Framework:
+                <ul>
+                    <li>
+                        Training Steps: Each model undergoes training for specified epochs, with functions to manage the training
+                        process.
+                    </li>
+                    <li>
+                        Testing and Evaluation: Post-training, the models are evaluated on test data, with detailed metrics and
+                        results encapsulated in a dictionary for further analysis.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Visualization and Analysis Tools:
+                <ul>
+                    <li>
+                        Random Sample Predictions: Visualizing predictions for randomly selected samples, aiding in understanding
+                        the model's behavior.
+                    </li>
+                    <img src="images/fashion_mnist/mnist_prediction_grid.png" alt="Model Prediction Grid" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                    <li>
+                        Confusion Matrix Plotting: Creating and plotting a confusion matrix, revealing the true vs. predicted
+                        classifications.
+                    </li>
+                    <img src="images/fashion_mnist/mnist_confusion_matrix.png" alt="Confusion Matrix" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                    <li>
+                        Cross-Model Comparisons: A comparative analysis of the three models, offering insights into their strengths,
+                        weaknesses, and suitability for different tasks.
+                    </li>
+                    <img src="images/fashion_mnist/comparing_model_results.png" alt="Model Results Comparison" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                </ul>
+            </li>
+            <li>
+                Model Saving and Loading Instructions:
+                <ul>
+                    <li>
+                        Saving Models: Guidelines to save trained models to files, preserving their state.
+                    </li>
+                    <li>
+                        Loading and Re-Evaluating Models: Instructions to load saved models and evaluate them, ensuring consistency
+                        and reproducibility.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Conclusion and Contributions: This project is more than a mere academic exercise; it embodies a practical and 
+                instructive exploration of computer vision techniques using PyTorch. From simple linear networks to sophisticated
+                CNNs, it illuminates the path to understanding and applying deep learning to real-world challenges. The inclusion of
+                diverse visualization tools, performance metrics, and model management functionalities makes it a valuable resource
+                for anyone interested in the field of artificial intelligence.
+            </li>
+        </ul>
+    </p>
     <a href="index.html" class="back-link">Back to all projects</a>
 </body>
 </html>
