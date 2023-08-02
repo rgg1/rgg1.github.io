@@ -6,105 +6,115 @@
 </head>
 <body>
     <h1>Image Classification on CIFAR-10 Dataset Using a CNN</h1>
-    <p>
-        This project is an exhaustive exploration of Convolutional Neural Networks (CNNs) for image classification, applied to the
-        CIFAR-10 dataset. Using PyTorch, the project delivers a complete lifecycle of constructing, training, evaluating, and
-        predicting with a CNN, achieving promising accuracies and providing opportunities for future enhancements.
-        <br>
-        <ul>
-            <li>
-                Introduction and Background: CIFAR-10, a dataset comprising 50,000 color training images and 10,000 test images,
-                serves as the foundation for this project. With images distributed across 10 diverse classes, the dataset is a
-                popular benchmark in the field of computer vision.
-            </li>
-            <img src="images/cifar_10/cifar_data_single_image.png" alt="CIFAR Single Image" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
-            <img src="images/cifar_10/cifar_data_grid.png" alt="CIFAR data grid" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
-            <li>
-                Installation and Dependencies: The project relies on essential libraries such as NumPy, Matplotlib, Torch, and
-                Torchvision. While instructions are provided for manual installation, running the notebook on Google Colab
-                eliminates the need for any manual setup.
-            </li>
-            <img src="images/cifar_10/cifar_libraries.png" alt="Project Libraries" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
-            <li>
-                Data Preparation and Handling:
-                <ul>
-                    <li>
-                        Data Sourcing: The CIFAR-10 data is retrieved from a dedicated URL, ensuring accessibility and consistency.
-                    </li>
-                    <li>
-                        Data Splitting: The dataset is judiciously divided into training and validation sets, further refining the
-                        training set to create a dedicated validation subset.
-                    </li>
-                    <li>
-                        Batch Processing: Utilizing data loaders, the project facilitates batch-wise iteration over the data,
-                        optimizing training efficiency.
-                    </li>
-                </ul>
-            </li>
-            <li>
-                Model Architecture and Design:
-                <ul>
-                    <li>
-                        Convolutional Layers: The architecture consists of three repeating blocks, each containing two Convolutional
-                        layers with ReLU activation, followed by a MaxPool2d layer.
-                    </li>
-                    <li>
-                        Flattening: A Flatten layer is employed to reshape the output into a compatible form for subsequent processing.
-                    </li>
-                    <li>
-                        Dense Layers: Three linear (or Dense) layers, with ReLU activation on the first two and no activation on the
-                        last, finalize the architecture. The final output is a tensor representing the 10 class probabilities.
-                    </li>
-                </ul>
-            </li>
-            <img src="images/cifar_10/cifar_model_architecture.png" alt="Model Architecture" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
-            <li>
-                Training Process and Optimization:
-                <ul>
-                    <li>
-                        Training Epochs: The model undergoes training for 10 epochs, providing a balanced trade-off between
-                        learning and computational resources.
-                    </li>
-                    <li>
-                        Adam Optimizer: Utilizing the Adam optimizer, the project ensures adaptive learning rate management and
-                        efficient convergence.
-                    </li>
-                    <li>
-                        Validation Loss Tracking: By monitoring validation loss, the model saves parameters corresponding to the
-                        best performance, enhancing generalization.
-                    </li>
-                </ul>
-            </li>
-            <li>
-                Model Evaluation and Insights:
-                <ul>
-                    <li>
-                        Validation and Test Performance: Rigorous evaluation on validation and test datasets reveals consistent
-                        accuracies above 75%, indicating the model's robustness.
-                    </li>
-                    <li>
-                        Prediction Functionality: A 'predict_image' function is included, allowing single-image predictions and
-                        demonstrating the model's real-world applicability.
-                    </li>
-                </ul>
-            </li>
-            <img src="images/cifar_10/cifar_model_accuracy.png" alt="Model Accuracy" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
-            <img src="images/cifar_10/cifar_model_loss.png" alt="Model Loss" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
-            <img src="images/cifar_10/cifar_model_prediction_image.png" alt="Model Prediction on Image" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
-            <li>
-                Conclusion and Future Directions: This project not only offers a practical and replicable implementation of a
-                CNN for CIFAR-10 classification but also highlights avenues for accuracy improvement. Whether through hyperparameter
-                tuning, data augmentation, or architectural modifications, the project opens doors to further exploration and
-                innovation.
-            </li>
-            <li>
-                Significance and Contributions: Beyond its technical aspects, the project serves as a comprehensive guide to CNNs,
-                covering the full spectrum from data preparation to model deployment. With meticulous explanations and a
-                well-crafted codebase, it stands as a valuable resource for learners, researchers, and professionals aiming to
-                delve into the world of image classification using deep learning.
-            </li>
-        </ul>
-    </p>
+    <div class="content-container">
+        <p>
+            This project is an exhaustive exploration of Convolutional Neural Networks (CNNs) for image classification, applied to the
+            CIFAR-10 dataset. Using PyTorch, the project delivers a complete lifecycle of constructing, training, evaluating, and
+            predicting with a CNN, achieving promising accuracies and providing opportunities for future enhancements.
+            <br>
+            <ul>
+                <li>
+                    Introduction and Background: CIFAR-10, a dataset comprising 50,000 color training images and 10,000 test images,
+                    serves as the foundation for this project. With images distributed across 10 diverse classes, the dataset is a
+                    popular benchmark in the field of computer vision.
+                </li>
+                <div class="image-container">
+                    <img class="project-image" src="images/cifar_10/cifar_data_single_image.png" alt="CIFAR Single Image" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                    <img class="project-image" src="images/cifar_10/cifar_data_grid.png" alt="CIFAR data grid" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                </div>
+                <li>
+                    Installation and Dependencies: The project relies on essential libraries such as NumPy, Matplotlib, Torch, and
+                    Torchvision. While instructions are provided for manual installation, running the notebook on Google Colab
+                    eliminates the need for any manual setup.
+                </li>
+                <div class="image-container">
+                    <img class="project-image" src="images/cifar_10/cifar_libraries.png" alt="Project Libraries" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                </div>
+                <li>
+                    Data Preparation and Handling:
+                    <ul>
+                        <li>
+                            Data Sourcing: The CIFAR-10 data is retrieved from a dedicated URL, ensuring accessibility and consistency.
+                        </li>
+                        <li>
+                            Data Splitting: The dataset is judiciously divided into training and validation sets, further refining the
+                            training set to create a dedicated validation subset.
+                        </li>
+                        <li>
+                            Batch Processing: Utilizing data loaders, the project facilitates batch-wise iteration over the data,
+                            optimizing training efficiency.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Model Architecture and Design:
+                    <ul>
+                        <li>
+                            Convolutional Layers: The architecture consists of three repeating blocks, each containing two Convolutional
+                            layers with ReLU activation, followed by a MaxPool2d layer.
+                        </li>
+                        <li>
+                            Flattening: A Flatten layer is employed to reshape the output into a compatible form for subsequent processing.
+                        </li>
+                        <li>
+                            Dense Layers: Three linear (or Dense) layers, with ReLU activation on the first two and no activation on the
+                            last, finalize the architecture. The final output is a tensor representing the 10 class probabilities.
+                        </li>
+                    </ul>
+                </li>
+                <div class="image-container">
+                    <img class="project-image" src="images/cifar_10/cifar_model_architecture.png" alt="Model Architecture" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                </div>
+                <li>
+                    Training Process and Optimization:
+                    <ul>
+                        <li>
+                            Training Epochs: The model undergoes training for 10 epochs, providing a balanced trade-off between
+                            learning and computational resources.
+                        </li>
+                        <li>
+                            Adam Optimizer: Utilizing the Adam optimizer, the project ensures adaptive learning rate management and
+                            efficient convergence.
+                        </li>
+                        <li>
+                            Validation Loss Tracking: By monitoring validation loss, the model saves parameters corresponding to the
+                            best performance, enhancing generalization.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Model Evaluation and Insights:
+                    <ul>
+                        <li>
+                            Validation and Test Performance: Rigorous evaluation on validation and test datasets reveals consistent
+                            accuracies above 75%, indicating the model's robustness.
+                        </li>
+                        <li>
+                            Prediction Functionality: A 'predict_image' function is included, allowing single-image predictions and
+                            demonstrating the model's real-world applicability.
+                        </li>
+                    </ul>
+                </li>
+                <div class="image-container">
+                    <img class="project-image" src="images/cifar_10/cifar_model_accuracy.png" alt="Model Accuracy" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                    <img class="project-image" src="images/cifar_10/cifar_model_loss.png" alt="Model Loss" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                    <img class="project-image" src="images/cifar_10/cifar_model_prediction_image.png" alt="Model Prediction on Image" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                </div>
+                <li>
+                    Conclusion and Future Directions: This project not only offers a practical and replicable implementation of a
+                    CNN for CIFAR-10 classification but also highlights avenues for accuracy improvement. Whether through hyperparameter
+                    tuning, data augmentation, or architectural modifications, the project opens doors to further exploration and
+                    innovation.
+                </li>
+                <li>
+                    Significance and Contributions: Beyond its technical aspects, the project serves as a comprehensive guide to CNNs,
+                    covering the full spectrum from data preparation to model deployment. With meticulous explanations and a
+                    well-crafted codebase, it stands as a valuable resource for learners, researchers, and professionals aiming to
+                    delve into the world of image classification using deep learning.
+                </li>
+            </ul>
+        </p>
+    </div>
     <a href="index.html" class="back-link">Back to all projects</a>
 </body>
 </html>

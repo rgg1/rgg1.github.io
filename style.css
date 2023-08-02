@@ -6,43 +6,42 @@ body, h1, p, a {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #1e1e1e; /* Dark background */
     line-height: 1.6;
-    color: #333;
+    color: #c1c1c1; /* Soft light text color */
     margin: 0 auto;
     max-width: 800px;
     padding: 20px;
 }
 
 h1 {
-    color: #444;
+    color: #e5e5e5; /* Slightly lighter header color */
     margin-bottom: 20px;
 }
 
 a {
-    color: #0077cc;
+    color: #60a3bc; /* Complementary link color */
 }
 
 .project p {
     margin: 10px 0;
 }
 
-/* Style for navigation back link */
 a.back-link {
     display: inline-block;
     margin: 20px 0;
     padding: 10px;
-    background-color: #0077cc;
+    background-color: #60a3bc; /* Matching with link color */
     color: #fff;
     border-radius: 5px;
 }
 
 .project {
-    border: 1px solid #ddd;
+    border: 1px solid #333; /* Darker border color */
     padding: 20px;
     margin: 20px 0;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #2a2a2a; /* Slightly lighter container background */
 }
 
 .project a {
@@ -50,8 +49,49 @@ a.back-link {
     font-size: 18px;
 }
 
-/* Add this class to the back link in each project HTML file */
 a.back-link {
     text-align: center;
     width: 100%;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-image {
+    margin: 10px;
+    border: 2px solid #c1c1c1; /* Border matching text color */
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Darker shadow */
+}
+
+
+
+
+.content-container {
+    /* width: 1000px; */
+    border: 1px solid #444; /* Border around the content */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #2a2a2a; /* Same as the project background */
+    margin: 20px 0;
+}
+
+.content-container p ul {
+    padding-left: 20px; /* Indentation for the list */
+}
+
+.content-container p ul li {
+    margin-bottom: 10px; /* Spacing between list items */
+}
+
+.content-container p ul ul li {
+    margin-left: 20px; /* Indentation for nested lists */
+    font-style: italic; /* Styling for nested lists */
+}
+
+.content-container p {
+    line-height: 1.8; /* Improved line height for readability */
 }
